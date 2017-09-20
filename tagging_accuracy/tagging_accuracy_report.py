@@ -106,7 +106,8 @@ class TaggingAccuracyReport():
             f.write(json.dumps(no_tags_list))
         return no_tags, man_tags_not_in_result, man_tags_not_collected, total_packages, correctly_tagged, partially_correct
 
-
+# Click for configuring the command line options that are required
+# by this script
 @click.command()
 @click.option('--automated-tags-bucket',
               help='The bucket in which automated tags are stored',
